@@ -3,8 +3,9 @@ class Nromano
   def convertir(numeronatural)
   	result = ""
   	SYMBOLS.each do | romano, numero |
-  		if numeronatural ==  numero
+  		while numeronatural ==  numero
         result = romano
+        numeronatural -=1
     	end
     end  
 	return result
