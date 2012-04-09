@@ -17,11 +17,11 @@ context "convertir " do
    end
    it "el 100 en L" do
     @nromano = Nromano.new()   
-    @nromano.convertir(100).should == "L"
+    @nromano.convertir(50).should == "L"
    end
    it "el 1000 en C" do
     @nromano = Nromano.new()   
-    @nromano.convertir(1000).should == "C"
+    @nromano.convertir(100).should == "C"
    end
  end
 
