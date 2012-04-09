@@ -24,4 +24,18 @@ context "convertir " do
     @nromano.convertir(1000).should == "C"
    end
  end
+
+ context "Agregar un valor " do
+    it "el 2 debe convertirse en II" do
+     @nromano = Nromano.new()   
+     @nromano.convertir(2).should == "II"
+    end  
+  end
+
+  context "Agregar un valor " do
+    it "el 3 debe convertirse en III" do
+     @nromano = Nromano.new()   
+     @nromano.convertir(3).should == "III"
+    end  
+  end
 end
